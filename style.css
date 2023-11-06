@@ -162,7 +162,7 @@ h3 {
 }
 .auth {
     text-align: center;
-    margin-top: 10%;
+    margin-top: 7%;
 }
 .auth a {
     color: black;
@@ -226,7 +226,7 @@ h3 {
     -moz-transform: translateX(-50%) translateY(-50%);
     -o-transform: translateX(-50%) translateY(-50%);
     transform: translateX(-50%) translateY(-50%);
-    background: #7192a8;
+    background: #363062;
     -moz-border-radius: 5px;
     -o-border-radius: 5px;
     -webkit-border-radius: 5px;
