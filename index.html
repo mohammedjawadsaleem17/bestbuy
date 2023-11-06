@@ -6,6 +6,11 @@
         <title>Bestbuy Tool</title>
         <link rel="stylesheet" href="style.css" />
         <script src="./index.js" defer></script>
+        <script
+            src="https://code.jquery.com/jquery-3.7.1.js"
+            integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+            crossorigin="anonymous"
+        ></script>
     </head>
     <body>
         <div>
@@ -20,6 +25,37 @@
 
                 <label for="password">Password</label>
                 <input type="password" placeholder="Password" id="password" />
+                <div>
+                    <!-- /*Pop Up*/ -->
+                    <div
+                        class="container"
+                        style="margin-top: 5%; margin-bottom: 0"
+                    >
+                        <a class="toggle" data-target="myPopup">
+                            Having trouble logging in?
+                        </a>
+
+                        <div id="myPopup" class="popup hide">
+                            <div class="popup-header">
+                                Logging issue
+                                <span class="close toggle" data-target="myPopup"
+                                    >close</span
+                                >
+                            </div>
+                            <div class="popup-body">
+                                Please contact Admin: arunkundil2@accenture.com
+                            </div>
+                            <div class="popup-footer">
+                                <button
+                                    class="toggle button"
+                                    data-target="myPopup"
+                                >
+                                    Contact admin !
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
                 <button class="custom-btn btn-16">Log In</button>
                 <p class="auth">
@@ -30,5 +66,13 @@
                 </p>
             </form>
         </div>
+        <script>
+            $(document).on('click', '.toggle', function (event) {
+                event.preventDefault()
+
+                var target = $(this).data('target')
+                $('#' + target).toggleClass('hide')
+            })
+        </script>
     </body>
 </html>
