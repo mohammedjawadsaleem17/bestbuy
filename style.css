@@ -5,8 +5,9 @@
     margin: 0;
     box-sizing: border-box;
 }
+
 body {
-    background-color: #080710;
+    background-color: #363062;
 }
 .background {
     width: 430px;
@@ -91,4 +92,78 @@ button {
     border-radius: 5px;
     cursor: pointer;
 }
-/*Video Background*/
+/*Gradient*/
+h3 {
+    background-image: -webkit-linear-gradient(76deg, #0046be, #fff200, #fff100);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/*btn**/
+
+.custom-btn {
+    width: 100%;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+    box-shadow: inset 2px 2px 2px 0px rgba(255, 255, 255, 0.5),
+        7px 7px 20px 0px rgba(0, 0, 0, 0.1), 4px 4px 5px 0px rgba(0, 0, 0, 0.1);
+    outline: none;
+}
+
+.btn-16 {
+    border: none;
+    color: #000;
+}
+.btn-16:after {
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 100%;
+    top: 0;
+    left: 0;
+    direction: rtl;
+    z-index: -1;
+    box-shadow: -7px -7px 20px 0px #fff9, -4px -4px 5px 0px #fff9,
+        7px 7px 20px 0px #0002, 4px 4px 5px 0px #0001;
+    transition: all 0.3s ease;
+}
+.btn-16:hover {
+    color: #000;
+}
+.btn-16:hover:after {
+    left: auto;
+    right: 0;
+    width: 100%;
+}
+.btn-16:active {
+    top: 2px;
+}
+
+.accenture {
+    width: 15%;
+    float: left;
+    box-sizing: border-box;
+    margin: 2%;
+}
+.bestbuy {
+    width: 10%;
+    float: right;
+    box-sizing: border-box;
+    margin: 2%;
+}
+.auth {
+    text-align: center;
+    margin-top: 10%;
+}
+.auth a {
+    color: black;
+}
